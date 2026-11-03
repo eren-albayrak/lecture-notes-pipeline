@@ -102,9 +102,9 @@ Each course package consists of:
 
 - **4 course packages ready**: Differential Equations, Statistics, Linear Programming Theory, Mechanics.
 - **In progress**: Advanced Calculus.
-- Shared in the department's class groups of 300–400 students each.
-- **Verbal branch**: a 688-question psychiatry question bank, with blind-solver / auditor / referee
-  answer verification. No question content is included here.
+- Shared with the department's class groups of 300–400 students.
+- **Verbal branch**: blind-solver / auditor / referee answer verification for already-typeset question
+  sets, shown here on a synthetic example only.
 
 ## Repository layout
 

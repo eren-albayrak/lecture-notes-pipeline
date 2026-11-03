@@ -27,8 +27,8 @@ README'deki "girdi → çıktı" görselleri de sentetiktir: el yazısı görün
 - **Hazırlanıyor:** İleri Analiz.
 - Paketler tam sürüm, telefon sürümü, sınav kitapçığı ve okuma rehberinden oluşur.
 - Bölümün 300–400 kişilik sınıf gruplarında paylaşılıyor.
-- **Sözel kol:** 688 soruluk bir psikiyatri soru bankası; cevaplar kör çözücü, denetçi ve hakemle
-  doğrulandı. Soru içeriği bu depoda yer almaz.
+- **Sözel kol:** Hazır dizilmiş soru setlerinde kör çözücü, denetçi ve hakemle cevap doğrulama;
+  bu depoda yalnızca sentetik örnekle gösterilir.
 
 ## Etik
 
