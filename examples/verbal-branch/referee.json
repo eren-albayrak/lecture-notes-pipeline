@@ -1,0 +1,14 @@
+[
+ {
+  "id": "S.3",
+  "decision": "fix",
+  "answer": "C",
+  "note": "Source marked D; correct is C because d/dx ln x = 1/x."
+ },
+ {
+  "id": "S.4",
+  "decision": "source_correct",
+  "answer": "B",
+  "note": "Key is correct; explanation replaced (it belonged to S.2)."
+ }
+]

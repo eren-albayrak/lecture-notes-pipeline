@@ -1,0 +1,42 @@
+[
+ {
+  "id": "S.1",
+  "source": "B",
+  "blind": "B",
+  "blind_reason": "power rule",
+  "auditor": "B",
+  "auditor_reason": "",
+  "reasons": []
+ },
+ {
+  "id": "S.2",
+  "source": "A",
+  "blind": "A",
+  "blind_reason": "(e^x)' = e^x",
+  "auditor": "A",
+  "auditor_reason": "",
+  "reasons": []
+ },
+ {
+  "id": "S.3",
+  "source": "D",
+  "blind": "C",
+  "blind_reason": "(ln x)' = 1/x",
+  "auditor": "C",
+  "auditor_reason": "key marks D; explanation itself supports C",
+  "reasons": [
+   "answer: source D, blind C, auditor C"
+  ]
+ },
+ {
+  "id": "S.4",
+  "source": "B",
+  "blind": "B",
+  "blind_reason": "highest derivative is second",
+  "auditor": "B",
+  "auditor_reason": "explanation copied from S.2",
+  "reasons": [
+   "explanation shifted"
+  ]
+ }
+]

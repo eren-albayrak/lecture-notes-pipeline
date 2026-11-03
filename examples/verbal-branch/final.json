@@ -1,0 +1,104 @@
+{
+ "questions": [
+  {
+   "id": "S.1",
+   "stem": "SYNTHETIC. What is the derivative of x^2?",
+   "options": [
+    {
+     "letter": "A",
+     "text": "x"
+    },
+    {
+     "letter": "B",
+     "text": "2x"
+    },
+    {
+     "letter": "C",
+     "text": "x^2/2"
+    },
+    {
+     "letter": "D",
+     "text": "2"
+    }
+   ],
+   "answer": "B",
+   "explanation": "Power rule: d/dx x^n = n x^(n-1).",
+   "answer_note": ""
+  },
+  {
+   "id": "S.2",
+   "stem": "SYNTHETIC. Which function solves y' = y?",
+   "options": [
+    {
+     "letter": "A",
+     "text": "e^x"
+    },
+    {
+     "letter": "B",
+     "text": "x"
+    },
+    {
+     "letter": "C",
+     "text": "ln x"
+    },
+    {
+     "letter": "D",
+     "text": "sin x"
+    }
+   ],
+   "answer": "A",
+   "explanation": "The exponential is its own derivative.",
+   "answer_note": ""
+  },
+  {
+   "id": "S.3",
+   "stem": "SYNTHETIC. What is the integral of 1/x for x > 0?",
+   "options": [
+    {
+     "letter": "A",
+     "text": "x^-2"
+    },
+    {
+     "letter": "B",
+     "text": "1/x^2"
+    },
+    {
+     "letter": "C",
+     "text": "ln x + C"
+    },
+    {
+     "letter": "D",
+     "text": "e^x + C"
+    }
+   ],
+   "answer": "C",
+   "explanation": "d/dx ln x = 1/x.",
+   "answer_note": "AI NOTE: Source marked D; correct is C because d/dx ln x = 1/x."
+  },
+  {
+   "id": "S.4",
+   "stem": "SYNTHETIC. What is the order of y'' + y = 0?",
+   "options": [
+    {
+     "letter": "A",
+     "text": "1"
+    },
+    {
+     "letter": "B",
+     "text": "2"
+    },
+    {
+     "letter": "C",
+     "text": "3"
+    },
+    {
+     "letter": "D",
+     "text": "0"
+    }
+   ],
+   "answer": "B",
+   "explanation": "AI NOTE (explanation corrected): the highest derivative present is y'', so the order is 2.",
+   "answer_note": ""
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+[
+ {
+  "id": "S.1",
+  "answer": "B",
+  "confidence": "certain",
+  "reason": "power rule"
+ },
+ {
+  "id": "S.2",
+  "answer": "A",
+  "confidence": "certain",
+  "reason": "(e^x)' = e^x"
+ },
+ {
+  "id": "S.3",
+  "answer": "C",
+  "confidence": "certain",
+  "reason": "(ln x)' = 1/x"
+ },
+ {
+  "id": "S.4",
+  "answer": "B",
+  "confidence": "certain",
+  "reason": "highest derivative is second"
+ }
+]

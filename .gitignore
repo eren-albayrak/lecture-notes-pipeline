@@ -1,0 +1,32 @@
+# Only the system is tracked. Lecture scans, produced books and course data never enter the repository.
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+
+# Sources and outputs of real projects
+*.pdf
+*.zip
+*.jpg
+*.jpeg
+*.png
+*.heic
+source_pages/
+inventory/
+build/
+output/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Deliberate exceptions: synthetic example output and README images
+!examples/numeric-branch/example.pdf
+!docs/img/*.png
+!docs/img/*.jpg

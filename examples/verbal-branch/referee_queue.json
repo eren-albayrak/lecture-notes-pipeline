@@ -1,0 +1,64 @@
+[
+ {
+  "id": "S.3",
+  "source": "D",
+  "blind": "C",
+  "blind_reason": "(ln x)' = 1/x",
+  "auditor": "C",
+  "auditor_reason": "key marks D; explanation itself supports C",
+  "reasons": [
+   "answer: source D, blind C, auditor C"
+  ],
+  "stem": "SYNTHETIC. What is the integral of 1/x for x > 0?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "x^-2"
+   },
+   {
+    "letter": "B",
+    "text": "1/x^2"
+   },
+   {
+    "letter": "C",
+    "text": "ln x + C"
+   },
+   {
+    "letter": "D",
+    "text": "e^x + C"
+   }
+  ],
+  "source_explanation": "d/dx ln x = 1/x."
+ },
+ {
+  "id": "S.4",
+  "source": "B",
+  "blind": "B",
+  "blind_reason": "highest derivative is second",
+  "auditor": "B",
+  "auditor_reason": "explanation copied from S.2",
+  "reasons": [
+   "explanation shifted"
+  ],
+  "stem": "SYNTHETIC. What is the order of y'' + y = 0?",
+  "options": [
+   {
+    "letter": "A",
+    "text": "1"
+   },
+   {
+    "letter": "B",
+    "text": "2"
+   },
+   {
+    "letter": "C",
+    "text": "3"
+   },
+   {
+    "letter": "D",
+    "text": "0"
+   }
+  ],
+  "source_explanation": "The exponential is its own derivative."
+ }
+]
