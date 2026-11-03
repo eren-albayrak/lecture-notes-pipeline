@@ -1,5 +1,7 @@
 # lecture-notes-pipeline
 
+[![checks](https://github.com/ferrariW368/lecture-notes-pipeline/actions/workflows/checks.yml/badge.svg)](https://github.com/ferrariW368/lecture-notes-pipeline/actions/workflows/checks.yml)
+
 **An AI-assisted production pipeline that turns handwritten lecture notes into traceable, verified
 digital textbooks.**
 

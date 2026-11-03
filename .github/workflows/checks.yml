@@ -1,0 +1,56 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TYPST_VERSION: "0.15.1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Typst
+        run: |
+          curl -sSL "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz" | tar -xJ
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          typst --version
+
+      - name: "Numeric branch: build the synthetic example"
+        run: typst compile examples/numeric-branch/main.typ "$RUNNER_TEMP/example.pdf" --root .
+
+      - name: "Numeric branch: SymPy gate"
+        run: python -I scripts/verify_solutions.py --checks-dir examples/numeric-branch/checks
+
+      - name: "Numeric branch: SymPy gate self-test (must reject wrong claims)"
+        run: python -I scripts/verify_solutions.py --selftest
+
+      - name: "Numeric branch: PDF QA"
+        run: python -I scripts/pdf_qa.py "$RUNNER_TEMP/example.pdf" --mark sample
+
+      - name: "Verbal branch: answer comparison"
+        run: python -I scripts/compare_answers.py examples/verbal-branch
+
+      - name: "Verbal branch: fidelity gate"
+        run: python -I scripts/fidelity_check.py examples/verbal-branch
+
+      - name: "Verbal branch: fidelity gate must fail on tampered input"
+        run: |
+          if python -I scripts/fidelity_check.py examples/verbal-branch final_tampered.json; then
+            echo "Tampered file passed the fidelity gate" && exit 1
+          fi

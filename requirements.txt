@@ -1,2 +1,2 @@
-sympy
-pymupdf
+sympy==1.14.0
+pymupdf==2.1
